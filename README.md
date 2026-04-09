@@ -5,12 +5,20 @@
 <h1 align="center">Solace</h1>
 
 <p align="center">
-[<img src="assets/logo.png" alt="Solace" height="20"/>](https://github.com/saunak-ramiya-sebasan/solace)
-[![Dockerized](https://img.shields.io/badge/Container-Docker-blue)](https://github.com/SAUNAK-RAMIYA-SEBASAN/solace/blob/main/docker-compose.yml)
-[![Frontend](https://img.shields.io/badge/Frontend-React%20%2B%20Vite-61DAFB)](https://github.com/SAUNAK-RAMIYA-SEBASAN/solace/tree/main/frontend)
-[![Backend](https://img.shields.io/badge/Backend-FastAPI-009688)](https://github.com/SAUNAK-RAMIYA-SEBASAN/solace/tree/main/backend)
-[![Database](https://img.shields.io/badge/Database-PostgreSQL-336791)]()
-[![Auth](https://img.shields.io/badge/Auth-JWT%20%2B%20OAuth2-orange)]()
+  <a href="https://github.com/saunak-ramiya-sebasan/solace">
+    <img src="assets/logo.png" alt="Solace" height="20"/>
+  </a>
+  <a href="https://github.com/saunak-ramiya-sebasan/solace/blob/main/docker-compose.yml">
+    <img src="https://img.shields.io/badge/Container-Docker-blue"/>
+  </a>
+  <a href="https://github.com/saunak-ramiya-sebasan/solace/tree/main/frontend">
+    <img src="https://img.shields.io/badge/Frontend-React%20%2B%20Vite-61DAFB"/>
+  </a>
+  <a href="https://github.com/saunak-ramiya-sebasan/solace/tree/main/backend">
+    <img src="https://img.shields.io/badge/Backend-FastAPI-009688"/>
+  </a>
+  <img src="https://img.shields.io/badge/Database-PostgreSQL-336791"/>
+  <img src="https://img.shields.io/badge/Auth-JWT%20%2B%20OAuth2-orange"/>
 </p>
 
 ---
