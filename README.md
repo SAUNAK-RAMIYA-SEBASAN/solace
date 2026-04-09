@@ -4,12 +4,14 @@
 
 <h1 align="center">Solace</h1>
 
+<p align="center">
 [<img src="assets/logo.png" alt="Solace" height="20"/>](https://github.com/saunak-ramiya-sebasan/solace)
-[![Dockerized](https://img.shields.io/badge/Container-Docker-blue)](https://github.com/saunak-ramiya-sebasan/solace)
-[![Frontend](https://img.shields.io/badge/Frontend-React%20%2B%20Vite-61DAFB)](https://github.com/saunak-ramiya-sebasan/solace)
-[![Backend](https://img.shields.io/badge/Backend-FastAPI-009688)](https://github.com/saunak-ramiya-sebasan/solace)
-[![Database](https://img.shields.io/badge/Database-PostgreSQL-336791)](https://github.com/saunak-ramiya-sebasan/solace)
-[![Auth](https://img.shields.io/badge/Auth-JWT%20%2B%20OAuth2-orange)](https://github.com/saunak-ramiya-sebasan/solace)
+[![Dockerized](https://img.shields.io/badge/Container-Docker-blue)](https://github.com/SAUNAK-RAMIYA-SEBASAN/solace/blob/main/docker-compose.yml)
+[![Frontend](https://img.shields.io/badge/Frontend-React%20%2B%20Vite-61DAFB)](https://github.com/SAUNAK-RAMIYA-SEBASAN/solace/tree/main/frontend)
+[![Backend](https://img.shields.io/badge/Backend-FastAPI-009688)](https://github.com/SAUNAK-RAMIYA-SEBASAN/solace/tree/main/backend)
+[![Database](https://img.shields.io/badge/Database-PostgreSQL-336791)]()
+[![Auth](https://img.shields.io/badge/Auth-JWT%20%2B%20OAuth2-orange)]()
+</p>
 
 ---
 
@@ -123,7 +125,26 @@ git clone https://github.com/SAUNAK-RAMIYA-SEBASAN/solace.git
 cd solace
 ```
 
-2. Run the application
+2. Create environment file
+
+Create a `.env` file inside the `backend/` folder:
+
+```env
+# DATABASE
+DATABASE_URL=postgresql://postgres:root@db:5432/mental_health_db
+
+# AUTH
+SECRET_KEY="your_secret_key"
+ACCESS_TOKEN_EXPIRE_MINUTES=1440
+
+# EMAIL CONFIG
+SMTP_HOST=smtp.gmail.com
+SMTP_PORT=587
+SMTP_USER=your_email@gmail.com
+SMTP_PASSWORD="your_16_digit_app_password"
+```
+
+3. Run the application
 
 ```bash
 docker compose build
