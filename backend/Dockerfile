@@ -21,10 +21,6 @@ WORKDIR /app
 # Copy the venv from builder
 COPY --from=builder /app/.venv .venv
 
-# !! WARNING: Only use this variant for local development.
-# !! Never push this image to a registry — it contains real credentials.
-COPY .env .env
-
 # Copy application code
 COPY . .
 
