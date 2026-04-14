@@ -2,6 +2,8 @@ import React, { createContext, useContext, useState, useEffect } from "react";
 
 const AuthContext = createContext(null);
 
+const API_BASE = import.meta.env.VITE_API_BASE || "";
+
 export function AuthProvider({ children }) {
   const [token, setToken] = useState(() =>
     localStorage.getItem("solace-token"),
@@ -16,7 +18,10 @@ export function AuthProvider({ children }) {
       setLoading(false);
       return;
     }
-    fetch("/me", { headers: { Authorization: `Bearer ${token}` } })
+
+    fetch(`${API_BASE}/me`, {
+      headers: { Authorization: `Bearer ${token}` },
+    })
       .then((r) => (r.ok ? r.json() : Promise.reject()))
       .then((data) => {
         setUser(data);
@@ -26,39 +31,46 @@ export function AuthProvider({ children }) {
         logout();
         setLoading(false);
       });
-  }, []);
+  }, [token]);
 
   const login = async (email, password) => {
     const form = new URLSearchParams();
     form.append("username", email);
     form.append("password", password);
-    const res = await fetch("/auth/login", {
+
+    const res = await fetch(`${API_BASE}/auth/login`, {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: form,
     });
+
     if (!res.ok) {
       const err = await res.json().catch(() => ({}));
       throw new Error(err.detail || "Login failed");
     }
+
     const data = await res.json();
     const t = data.access_token;
+
     localStorage.setItem("solace-token", t);
     setToken(t);
     setUser({ email });
+
     return data;
   };
 
   const signup = async (email, password) => {
-    const res = await fetch("/auth/signup", {
+    const res = await fetch(`${API_BASE}/auth/signup`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ email, password }),
     });
+
     if (!res.ok) {
       const err = await res.json().catch(() => ({}));
       throw new Error(err.detail || "Signup failed");
     }
+
     return res.json();
   };
 

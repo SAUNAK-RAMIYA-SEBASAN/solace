@@ -1,4 +1,4 @@
-const BASE = "";
+const BASE = import.meta.env.VITE_API_BASE || "";
 
 async function request(path, options = {}, token = null) {
   const headers = { "Content-Type": "application/json", ...options.headers };
