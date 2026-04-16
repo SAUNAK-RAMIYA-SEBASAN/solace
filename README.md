@@ -181,9 +181,13 @@ Note: For Gmail, use an App Password instead of your account password.
 
 # Live Url
 
-### Frontend Url: [https://proud-grass-09ddc1400.7.azurestaticapps](https://proud-grass-09ddc1400.7.azurestaticapps.net)
+## Frontend Url: 
+### [https://proud-grass-09ddc1400.7.azurestaticapps](https://proud-grass-09ddc1400.7.azurestaticapps.net)
 
-### Backend Url:  [solace-backend-app-heeccha2ezdwa8gj.southindia-01.azurewebsites.net](solace-backend-app-heeccha2ezdwa8gj.southindia-01.azurewebsites.net)
+## Backend Url:  
+### [https://solace-backend-app-heeccha2ezdwa8gj.southindia-01.azurewebsites.net](https://solace-backend-app-heeccha2ezdwa8gj.southindia-01.azurewebsites.net)
 
+## API Documentation: (FastAPI Swagger UI)
+### [https://solace-backend-app-heeccha2ezdwa8gj.southindia-01.azurewebsites.net/docs](https://solace-backend-app-heeccha2ezdwa8gj.southindia-01.azurewebsites.net/docs)
 
 ---
