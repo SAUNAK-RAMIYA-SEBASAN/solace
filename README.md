@@ -176,3 +176,14 @@ Note: For Gmail, use an App Password instead of your account password.
 ![Home](screenshots/home.png)
 ![Assessment](screenshots/assessment.png)
 ![Report](screenshots/report.png)
+
+---
+
+# Live Url
+
+### Frontend Url: [https://proud-grass-09ddc1400.7.azurestaticapps](https://proud-grass-09ddc1400.7.azurestaticapps.net)
+
+### Backend Url:  [solace-backend-app-heeccha2ezdwa8gj.southindia-01.azurewebsites.net](solace-backend-app-heeccha2ezdwa8gj.southindia-01.azurewebsites.net)
+
+
+---
